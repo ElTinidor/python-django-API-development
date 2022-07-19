@@ -1,1 +1,45 @@
 # python-django-API-development
+
+API in Django Rest Framework (MVT pattern)
+products: 
+    1. id
+    2. name
+    3. category
+    4. price
+    5. description
+    6. stars
+
+Todo:
+    1. Django Rest Framework
+    2. Django decorators idea (api_view)
+    3. GET / POST request idea
+    4. API Response
+    5. Serializer (model data) (json)
+
+Operations: 
+    Create - product [POST]
+    ListAll - Products [GET]
+    ViewProduct (id) - product [GET]
+    Update (id) - product [POST]
+    Delete (id) - product [GET]
+
+Steps: 
+- pip install Django
+- python manage.py startapp "name"
+- add in installed_apps: api.apps.ApiConfig
+- pip install djangorestframework and add in installed_apps
+- configuration for MYSQL - 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_rest_product_api',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+
+
+Swagger documentation:
+- pip install drf-yasg
